@@ -30,14 +30,14 @@ $(function () {
      */
 
     // Loop to create vertical grid lines
-    // for (let i = 100; i < canvas.width; i += 100) {
-    //   createPlatform(i, 0, 1, canvas.height);
-    // }
+     for (let i = 100; i < canvas.width; i += 100) {
+       createPlatform(i, 0, 1, canvas.height);
+     }
 
     // Loop to create horizontal gride lines
-    // for (let i = 100; i < canvas.height; i += 100) {
-    //   createPlatform(0, i, canvas.width, 1);
-    // }
+     for (let i = 100; i < canvas.height; i += 100) {
+       createPlatform(0, i, canvas.width, 1);
+     }
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
@@ -48,8 +48,13 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 
-
-
+    // stair platforms
+    createPlatform(150,650,100,10)
+    createPlatform(150,650,10,100)
+    createPlatform(250,560,10,100)
+    createPlatform(250,550,100,10)
+    createPlatform(350,450,100,10)
+    createPlatform()
     
     // TODO 2
     // Create collectables
