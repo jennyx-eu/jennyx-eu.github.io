@@ -48,21 +48,76 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 
-    // stair platforms
-    createPlatform(150,650,100,10)
-    createPlatform(150,650,10,100)
-    createPlatform(250,560,10,100)
-    createPlatform(250,550,100,10)
-    createPlatform(350,450,100,10)
-    createPlatform()
+    // top L 1
+    createPlatform(200,200,100,10)
+    createPlatform(300,100,10,100)
+    createPlatform(200,200,10,100)
+    createPlatform(300,100,100,10)
+    createPlatform(150,300,50,10)
+   
+   // top L 2
+    createPlatform(300,300,100,10)
+    createPlatform(400,200,10,100)
+
+    //bottom L 
+    createPlatform(200,500,10,100)
+    createPlatform(200,600,100,10)
     
+    //mid bottom L
+    createPlatform(400,600,100,10)
+    createPlatform(500,600,10,100)
+
+    //single plat 1
+    createPlatform(250,400,100,10)
+    
+    //mid L
+  createPlatform(600,500,10,100)
+  createPlatform(500,500,100,10)
+  createPlatform(500,400,10,100)
+
+    //mid R
+    createPlatform(700,500,10,100)
+    createPlatform(700,500,100,10)
+    createPlatform(800,400,10,100)
+
+    //middle frfr
+    createPlatform(600,400,100,10)
+    createPlatform(600,300,10,100)
+    createPlatform(700,300,10,100)
+
+    //mid bottom R
+    createPlatform(800,600,10,100)
+    createPlatform(800,600,100,10)
+
+    //bottom R
+    createPlatform(1100,500,10,100)
+    createPlatform(1000,600,100,10)
+
+    //Top R 1
+    createPlatform(900,100,100,10)
+    createPlatform(1000,100,10,100)
+    createPlatform(1000,200,100,10)
+    createPlatform(1100,200,10,100)
+    createPlatform(1100,300,50,10)
+
+    //Top R 2
+    createPlatform(900,200,10,100)
+    createPlatform(900,300,100,10)
+
+    //single plat 2
+    createPlatform(950,400,100,10)
+
+    //absolute bottom
+    createPlatform(0,700,1400,10) 
+
+
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
-
+createCollectable('diamond',700,770,20,0.5)
 
 
     // TODO 3
