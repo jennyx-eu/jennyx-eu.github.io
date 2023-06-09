@@ -107,8 +107,11 @@ $(function () {
     //single plat 2
     createPlatform(950,400,100,10)
 
+    //right wall
+    createPlatform(1300,0,10,700)
+
     //absolute bottom
-    createPlatform(0,700,1400,10) 
+    createPlatform(0,700,1310,10) 
 
 
     // TODO 2
