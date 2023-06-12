@@ -30,14 +30,14 @@ $(function () {
      */
 
     // Loop to create vertical grid lines
-     for (let i = 100; i < canvas.width; i += 100) {
-       createPlatform(i, 0, 1, canvas.height);
-     }
+    // for (let i = 100; i < canvas.width; i += 100) {
+    //   createPlatform(i, 0, 1, canvas.height);
+    // }
 
     // Loop to create horizontal gride lines
-     for (let i = 100; i < canvas.height; i += 100) {
-       createPlatform(0, i, canvas.width, 1);
-     }
+    // for (let i = 100; i < canvas.height; i += 100) {
+    //   createPlatform(0, i, canvas.width, 1);
+    // }
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
@@ -48,70 +48,40 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 
-    // top L 1
-    createPlatform(200,200,100,10)
-    createPlatform(300,100,10,100)
-    createPlatform(200,200,10,100)
-    createPlatform(300,100,100,10)
-    createPlatform(150,300,50,10)
-   
-   // top L 2
-    createPlatform(300,300,100,10)
-    createPlatform(400,200,10,100)
 
-    //bottom L 
-    createPlatform(200,500,10,100)
-    createPlatform(200,600,100,10)
-    
-    //mid bottom L
-    createPlatform(400,600,100,10)
-    createPlatform(500,600,10,100)
+    // floor 6
+    createPlatform(0,135,1250,16);
 
-    //single plat 1
-    createPlatform(250,400,100,10)
-    
-    //mid L
-  createPlatform(600,500,10,100)
-  createPlatform(500,500,100,10)
-  createPlatform(500,400,10,100)
+    // floor 5
+    createPlatform(150,250,1250,15);
 
-    //mid R
-    createPlatform(700,500,10,100)
-    createPlatform(700,500,100,10)
-    createPlatform(800,400,10,100)
+    // floor 4
+    createPlatform(0,370,1250,15);
 
-    //middle frfr
-    createPlatform(600,400,100,10)
-    createPlatform(600,300,10,100)
-    createPlatform(700,300,10,100)
+    // floor 3
+    createPlatform(150,490,1250,15);
 
-    //mid bottom R
-    createPlatform(800,600,10,100)
-    createPlatform(800,600,100,10)
-
-    //bottom R
-    createPlatform(1100,500,10,100)
-    createPlatform(1000,600,100,10)
-
-    //Top R 1
-    createPlatform(900,100,100,10)
-    createPlatform(1000,100,10,100)
-    createPlatform(1000,200,100,10)
-    createPlatform(1100,200,10,100)
-    createPlatform(1100,300,50,10)
-
-    //Top R 2
-    createPlatform(900,200,10,100)
-    createPlatform(900,300,100,10)
-
-    //single plat 2
-    createPlatform(950,400,100,10)
+    // floor 2
+    createPlatform(0,610,1250,15);
+  
+    // floor 1
+    createPlatform(0,730,1400,20);
+  
+    //left wall
+    createPlatform(0,140,20,480);
 
     //right wall
-    createPlatform(1300,0,10,700)
+    createPlatform(1380,0,20,750);
 
-    //absolute bottom
-    createPlatform(0,700,1310,10) 
+  
+
+    
+
+    //Bottom R Quadrant
+
+    //Top L Quadrant
+
+    //Top R Quadrant
 
 
     // TODO 2
@@ -120,7 +90,19 @@ $(function () {
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
-createCollectable('diamond',700,770,20,0.5)
+    // middle
+    createCollectable('database',630,450);
+
+    //top R
+    createCollectable('database',950,50);
+
+    //bottom
+    createCollectable('database',450,650);
+
+    //ex.
+    //createCollectable("database", 500, 300,20,0.5);
+
+
 
 
     // TODO 3
@@ -129,8 +111,14 @@ createCollectable('diamond',700,770,20,0.5)
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
+    //on top wall 1
+    createCannon('top',300,1000);
 
+    //on top wall 2
+   createCannon('top',700,1000);
 
+   //on top wall 3
+   createCannon('top',1100,1000);
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
